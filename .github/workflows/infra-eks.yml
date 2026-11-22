@@ -151,7 +151,7 @@ jobs:
       - name: Terraform Apply
         working-directory: ${{ env.TF_WORKING_DIR }}
         run: |
-          terraform apply -auto-approve tfplan
+          terraform destroy -auto-approve tfplan
 
       # ----------------------------------------------------------
       # TERRAFORM OUTPUTS
